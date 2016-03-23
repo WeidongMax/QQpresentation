@@ -1,0 +1,238 @@
+﻿<Window x:Class="QQ_presentation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="QQ2015" Height="800" Width="350" Icon="NewFolder/gunBoy.png"
+        ResizeMode="NoResize" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.08*"/>
+            <RowDefinition Height="0.02*"/>    <!--第二行是空的-->
+            <RowDefinition Height="0.07*"/>
+            <RowDefinition Height="0.05*"/>
+            <RowDefinition Height="0.05*"/>    <!--第五行是空的-->
+            <RowDefinition Height="0.06*"/>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="0.7*"/>
+            <RowDefinition Height="0.07*"/>
+        </Grid.RowDefinitions>
+        <Image Grid.RowSpan="9" Source="NewFolder/backg.jpg" Stretch="Fill" Opacity="0.4"/>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.8*"/>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="0.4*"/>
+                <ColumnDefinition Width="0.4*"/>
+            </Grid.ColumnDefinitions>
+            <Canvas Background="Transparent">
+                <Image Grid.Column="0" Source="/NewFolder/QQ头像.png"  Width="27" Stretch="Uniform" Height="37" Canvas.Top="-2" Canvas.Left="8"/>
+            </Canvas>
+            <TextBlock Grid.Column="1" Text="QQ" FontSize="23"/>
+            <Button Grid.Column="2" Height="20" Width="20" Margin="0,0,0,18" VerticalAlignment="Top" ToolTip="最小化" 
+                    Click="Min_Click">
+                <Button.Content >
+                    <Line X1="14"  Stroke="Black" StrokeThickness="1" Margin="0,10,0,0"/>
+                </Button.Content>
+            </Button>
+            <Button Grid.Column="3" Height="20" Width="20" Margin="0,0,0,26"  ToolTip="关闭" VerticalAlignment="Top"
+                    Click="Close_Click"  >
+                <Canvas >
+                    <Line X1="10" Y1="10"  Stroke="Black" StrokeThickness="1" Canvas.Left="-5.5" Canvas.Top="-5.5" />
+                    <Line X1="-10" Y1="10" Stroke="Black" StrokeThickness="1" Canvas.Left="4.5" Canvas.Top="-5.5"/>
+                </Canvas>
+            </Button>
+        </Grid>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.4*"/>
+                <ColumnDefinition Width="0.1*"/>
+                <ColumnDefinition Width="0.2*"/>
+                <ColumnDefinition Width="0.4*"/>
+                <ColumnDefinition Width="0.2*"/>
+            </Grid.ColumnDefinitions>
+            <Button Content="邓不利东" FontSize="24" FontStyle="Normal" Foreground="Black" Background="Transparent" BorderBrush="Transparent"
+                    Cursor="Hand" Click="Popup_CP_Click"/>
+            <Menu Grid.Column="1"  Width="25" Height="25" Background="Transparent" Margin="2,0,-0.5,0">
+                <MenuItem  Foreground="Green">
+                    <MenuItem.Icon >
+                        <Image Source="emotion/online2.png" Name="InitialPic"/>
+                    </MenuItem.Icon>
+                    <MenuItem Click="Online_Click" >
+                        <MenuItem.Header>
+                            <TextBlock Text="我在线上"/>
+                        </MenuItem.Header>
+                        <MenuItem.Icon>
+                            <Image  Source="emotion/online2.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Click="Smile_face_Click">
+                        <MenuItem.Header>
+                            <TextBlock Text="Q我吧"/>
+                        </MenuItem.Header>
+                        <MenuItem.Icon>
+                            <Image Source="emotion/smile_face2.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Click="away_Click">
+                        <MenuItem.Header>
+                            <TextBlock Text="离开"/>
+                        </MenuItem.Header>
+                        <MenuItem.Icon>
+                            <Image Source="emotion/away2.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Click="busy_Click">
+                        <MenuItem.Header>
+                            <TextBlock Text="忙碌"/>
+                        </MenuItem.Header>
+                        <MenuItem.Icon>
+                            <Image Source="emotion/busy2.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Click="not_disturb_Click">
+                        <MenuItem.Header>
+                            <TextBlock Text="请勿打扰"/>
+                        </MenuItem.Header>
+                        <MenuItem.Icon>
+                            <Image Source="emotion/not_disturb2.png" />
+                        </MenuItem.Icon>
+                    </MenuItem >
+                    <MenuItem Click="offline_Click">
+                        <MenuItem.Header>
+                            <TextBlock Text="离线"/>
+                        </MenuItem.Header>
+                        <MenuItem.Icon>
+                            <Image Source="emotion/offline2.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </MenuItem>
+            </Menu>
+            <TextBlock Grid.Column="2" Text="LV99" VerticalAlignment="Center" Foreground="Gold"/>
+            <Image Grid.Column="4" />
+        </Grid>
+        <Grid Grid.Row="3">
+            <TextBox  Name="txtbox1" Text="Working hard ,living free." 
+                      FontSize="17" FontFamily="kaiti"  Background="Transparent" BorderBrush="Transparent"
+                      VerticalContentAlignment="Center" PreviewMouseDown="txtbox1_PreviewMouseDown" 
+                      GotFocus="TxtBox1_GotFocus" LostFocus="TxtBox1_LostFocus"/>
+            
+        </Grid>
+        <Grid Grid.Row="5">
+            <Canvas>
+                <TextBox x:Name="txtbox2" Background="Gray" Opacity="0.7" Height="38" Width="342"  BorderBrush="Transparent"
+                     Text="  搜索 : 联系人、讨论组、群、企业" FontSize="16" GotFocus="txtbox2_GotFocus" LostFocus="txtbox2_LostFocus"
+                     VerticalContentAlignment="Center" >
+                    <TextBox.ToolTip>
+                        <ToolTip>
+                            <StackPanel>
+                                <TextBlock>输入QQ号码、姓名/昵称、拼音、Email查找</TextBlock>
+                                <TextBlock>联系人，还可以通过完整的QQ号码查找陌生</TextBlock>
+                                <TextBlock>人</TextBlock>
+                            </StackPanel>
+                        </ToolTip>
+                    </TextBox.ToolTip>
+                </TextBox>
+                <Image Name="pic_search" Source="NewFolder/search.png" Canvas.Right="5" Canvas.Top="8" Opacity="0.7" Visibility="Visible"/>
+                <Image Name="pic_offline3" Source="emotion/offline3.png" Canvas.Right="5" Canvas.Top="8" Width="22" Height="22" Opacity="0.7" Visibility="Hidden"/>
+            </Canvas>
+            
+        </Grid>
+        <Grid Grid.Row="6">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Button ToolTip="会话"  Background="Transparent" BorderBrush="Transparent" Height="45">
+                <Button.Content>
+                    <Image Source="NewFolder/message_box_one.png" Height="35" Margin="0,5,0,0"/>
+                </Button.Content>
+            </Button>
+            <Button Grid.Column="1" ToolTip="联系人" Background="Transparent" BorderBrush="Transparent" Height="45">
+                <Button.Content >
+                    <Image Source="NewFolder/head.png" Height="50" Margin="0,-5,0,0"/>
+                </Button.Content>
+            </Button>
+            <Button Grid.Column="2" ToolTip="QQ空间" Background="Transparent" BorderBrush="Transparent" Height="45">
+                <Button.Content>
+                    <Image Source="NewFolder/qqroom.png"/>
+                </Button.Content>
+            </Button>
+            <Button Grid.Column="3" ToolTip="群/讨论组" Background="Transparent" BorderBrush="Transparent" Height="45">
+                <Button.Content>
+                    <Image Source="NewFolder/group.png"/>
+                </Button.Content>
+            </Button>
+            <Button Grid.Column="4" ToolTip="腾讯课堂" Background="Transparent" BorderBrush="Transparent" Height="45">
+                <Button.Content>
+                    <Image Source="NewFolder/tencent_class.png"/>
+                </Button.Content>
+            </Button>
+            <Button Grid.Column="5" ToolTip="我的手机" Background="Transparent" BorderBrush="Transparent" Height="45">
+                <Button.Content>
+                    <Image Source="NewFolder/mobile.png" Height="38" Margin="0,2,0,0"/>
+                </Button.Content>
+            </Button>
+        </Grid>
+        <Grid Grid.Row="7">
+            <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="8,0,10,10" Background="Transparent">
+                <ScrollViewer.Content>
+                    <StackPanel Width="230" Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top" Name="FriendListControl"/>
+                </ScrollViewer.Content>
+            </ScrollViewer>
+        </Grid>
+        <Grid Grid.Row="8">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="1.5*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            <Button BorderBrush="Transparent" Background="Transparent" ToolTip="主菜单">
+                <Button.Content>
+                    <Image Source="NewFolder/pull_up.png"/>
+                </Button.Content>
+            </Button>
+            <Button Grid.Column="1" BorderBrush="Transparent" Background="Transparent" ToolTip="打开系统设置">
+                <Button.Content>
+                    <Image Source="NewFolder/setting.png" Width="25"/>
+                </Button.Content>
+            </Button>
+            <Button Grid.Column="2" BorderBrush="Transparent" Background="Transparent" ToolTip="打开消息管理器">
+                <Button.Content>
+                    <Image Source="NewFolder/speaker.png" Height="28"/>
+                </Button.Content>
+            </Button>
+            <Button Grid.Column="3" BorderBrush="Transparent" Background="Transparent"  ToolTip="文件共享功能">
+                <Button.Content>
+                    <Image Source="NewFolder/folder_share.png"  Height="27" Width="27" />
+                </Button.Content>
+            </Button>
+            <Button Grid.Column="4" BorderBrush="Transparent" Background="Transparent" ToolTip="微云">
+                <Button.Content>
+                    <Image Source="NewFolder/icloud2.png" Height="27"/>
+                </Button.Content>
+            </Button>
+            <Button Grid.Column="5" BorderBrush="Transparent" Background="Transparent" ToolTip="找人，找群，找服务"
+                    Click="Button_Click_1">
+                <Canvas>
+                    <Image Source="NewFolder/search.png" Canvas.Left="-30"  Height="38" Canvas.Top="-18" Width="28"  />
+                    <TextBlock Text="查找" FontSize="16" Canvas.Top="-9" Canvas.Left="-4"  />
+                </Canvas>
+            </Button>
+            <Button Grid.Column="6"  BorderBrush="Transparent"  ToolTip="打开应用宝" Background="Transparent">
+                <Canvas>
+                    <Image Source="NewFolder/applicationBox.png" 
+                           Height="20" Width="25" Canvas.Left="-35" Canvas.Top="-10" 
+                           Stretch="Uniform" />
+                    <TextBlock Text="应用宝" Canvas.Bottom="-10" Canvas.Left="-10" FontSize="16"/>
+                </Canvas>
+            </Button>
+        </Grid>
+    </Grid>
+</Window>

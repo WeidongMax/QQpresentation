@@ -1,0 +1,34 @@
+E:\C#\WPF\QQ presentation\QQ presentation\bin\Debug\QQ presentation.exe.config
+E:\C#\WPF\QQ presentation\QQ presentation\bin\Debug\QQ presentation.exe
+E:\C#\WPF\QQ presentation\QQ presentation\bin\Debug\QQ presentation.pdb
+E:\C#\WPF\QQ presentation\QQ presentation\obj\Debug\MainWindow.baml
+E:\C#\WPF\QQ presentation\QQ presentation\obj\Debug\MyProfile.baml
+E:\C#\WPF\QQ presentation\QQ presentation\obj\Debug\skin.baml
+E:\C#\WPF\QQ presentation\QQ presentation\obj\Debug\App.baml
+E:\C#\WPF\QQ presentation\QQ presentation\obj\Debug\MainWindow.g.cs
+E:\C#\WPF\QQ presentation\QQ presentation\obj\Debug\MyProfile.g.cs
+E:\C#\WPF\QQ presentation\QQ presentation\obj\Debug\App.g.cs
+E:\C#\WPF\QQ presentation\QQ presentation\obj\Debug\QQ presentation_MarkupCompile.cache
+E:\C#\WPF\QQ presentation\QQ presentation\obj\Debug\QQ presentation.g.resources
+E:\C#\WPF\QQ presentation\QQ presentation\obj\Debug\QQ_presentation.Properties.Resources.resources
+E:\C#\WPF\QQ presentation\QQ presentation\obj\Debug\QQ presentation.csproj.GenerateResource.Cache
+E:\C#\WPF\QQ presentation\QQ presentation\obj\Debug\QQ presentation.exe
+E:\C#\WPF\QQ presentation\QQ presentation\obj\Debug\QQ presentation.pdb
+E:\C#\WPF\QQ presentation\QQ presentation\obj\Debug\QQ presentation.csprojResolveAssemblyReference.cache
+F:\C#\WPF\QQ presentation\QQ presentation\bin\Debug\QQ presentation.exe.config
+F:\C#\WPF\QQ presentation\QQ presentation\obj\Debug\QQ presentation.exe
+F:\C#\WPF\QQ presentation\QQ presentation\obj\Debug\QQ presentation.pdb
+F:\C#\WPF\QQ presentation\QQ presentation\bin\Debug\QQ presentation.exe
+F:\C#\WPF\QQ presentation\QQ presentation\bin\Debug\QQ presentation.pdb
+F:\C#\WPF\QQ presentation\QQ presentation\obj\Debug\QQ presentation.csprojResolveAssemblyReference.cache
+F:\C#\WPF\QQ presentation\QQ presentation\obj\Debug\MainWindow.baml
+F:\C#\WPF\QQ presentation\QQ presentation\obj\Debug\MyProfile.baml
+F:\C#\WPF\QQ presentation\QQ presentation\obj\Debug\skin.baml
+F:\C#\WPF\QQ presentation\QQ presentation\obj\Debug\App.baml
+F:\C#\WPF\QQ presentation\QQ presentation\obj\Debug\MainWindow.g.cs
+F:\C#\WPF\QQ presentation\QQ presentation\obj\Debug\MyProfile.g.cs
+F:\C#\WPF\QQ presentation\QQ presentation\obj\Debug\App.g.cs
+F:\C#\WPF\QQ presentation\QQ presentation\obj\Debug\QQ presentation_MarkupCompile.cache
+F:\C#\WPF\QQ presentation\QQ presentation\obj\Debug\QQ presentation.g.resources
+F:\C#\WPF\QQ presentation\QQ presentation\obj\Debug\QQ_presentation.Properties.Resources.resources
+F:\C#\WPF\QQ presentation\QQ presentation\obj\Debug\QQ presentation.csproj.GenerateResource.Cache
